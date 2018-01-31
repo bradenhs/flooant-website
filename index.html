@@ -4,57 +4,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
   <title>Document</title>
   <style>
     body {
       margin: 0px;
-      font-family: 'Ubuntu';
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 400;
     }
 
     .logo {
-      width: 100%;
-      max-width: 400px;
+      position: absolute;
+      width: 400px;
+      max-width: calc(100% - 20px);
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+      pointer-events: none;
     }
 
     header {
       background: #4fc37d;
       text-align: center;
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-top: 140px;
-      padding-bottom: 130px;
+      height: 70vw;
+      min-height: 200px;
+      max-height: 400px;
       overflow: hidden;
       position: relative;
     }
 
     h2 {
-      color: white;
-      font-family: 'Ubuntu';
-      font-weight: 300;
+      font-weight: 700;
       font-size: 24px;
       padding-top: 50px;
       margin: 0;
     }
 
     #particles {
-      background: 'red';
       position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
+      left: -100px;
+      right: -100px;
+      top: -100px;
+      bottom: -100px;
+    }
+
+    section {
+      color: white;
+      background: #4c4c4c;
+      text-align: center;
     }
   </style>
 </head>
 <body>
   <header>
-    <img class='logo' src="./flooant-logo.svg"/>
-    <h2>Foriegn language practice with natives</h2>
+    <img class='logo' src="./flooant-logo.svg" alt="Flooant"/>
     <div id="particles"></div>
   </header>
   <section>
-    Flooant connects language learners with native speakers.
+    <h2>Conversation powered language learning</h2>
   </section>
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script>
