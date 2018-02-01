@@ -44,6 +44,13 @@
       z-index: 3;
     }
 
+    navigation img {
+      position: absolute;
+      left: -2px;
+      top: -8px;
+      height: 40px;
+    }
+
     navigation button {
       border: none;
       background: rgba(255, 255, 255, .05);
@@ -114,7 +121,7 @@
 
     section .left-col {
       flex-grow: 1;
-      padding-right: 50px;
+      padding-right: 60px;
       padding-top: 110px;
       text-align: center;
     }
@@ -240,6 +247,7 @@
 
 <body>
   <navigation>
+    <img src="/flooant-logo-a.svg" />
     <button onclick="scrollToBottom();">
       Contact us
     </button>
