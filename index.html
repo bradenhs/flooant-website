@@ -284,15 +284,6 @@
     var leftCol = document.querySelector(".left-col");
     var headerHeight = document.querySelector("header").offsetHeight;
 
-    window.addEventListener('scroll', onScroll);
-
-    onScroll();
-
-    function onScroll() {
-      var yTranslate = (window.scrollY - headerHeight) / 6;
-      leftCol.style.transform = 'translateY(' + yTranslate + 'px)';
-    }
-
     function scrollToBottom() {
       window.scroll({ top: document.body.scrollHeight, left: 0, behavior: 'smooth' })
       document.querySelector('footer a').className = '';
